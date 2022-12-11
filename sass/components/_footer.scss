@@ -1,0 +1,97 @@
+.footer{
+    &__section{
+        background-color: var(--darkfooter);
+        display: flex;
+        justify-content: left;
+        flex-direction: row;
+        align-items: center;
+        padding: 60px 0;
+    }
+        
+    &__container{
+        max-width: 1200px;
+        margin-right: 70px;
+        white-space: no-wrap;
+        @media screen and(max-width:1200px){
+            margin-top: 60px;
+        }
+            
+        &--whitelogo{
+            color: var(--white);
+        }
+        &--address{
+            padding-top: 20px;
+            & li{
+                text-decoration: none;
+                color: var(--whitetrans);
+            }
+        }
+        &--address,
+        &--address p {
+            text-decoration: none;
+            font-style: normal;
+            color: var(--white);
+            font-size: 14px;
+            line-height: 1.71;
+        }
+    }
+    &__social{
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 16px;
+            letter-spacing: 0.03em;
+            text-transform: uppercase;
+            color: #ffffff;
+        }
+    &__socialmedia{
+            display: flex;
+            justify-content: left;
+            margin-right: 10px;
+                
+            &--background{
+                background-color: rgba(255, 255, 255, 0.1);
+                margin-right: 10px;
+                margin-top: 20px;
+            }
+            &--icon{
+                fill: var(--white);
+            }
+        }
+    &__contact {
+        display: flex;
+        flex-direction: column;
+    }
+    &__link{
+        text-decoration: none;
+        color: var(--whitetrans);
+    }
+    &__link:hover,
+    &__link:focus{
+        color: var(--blue);
+        text-decoration: none;
+        fill: var(--blue);
+        cursor: pointer;
+    }
+}
+
+
+.footer__section .flex_row {
+    display: flex;
+    flex-direction: column;
+  
+    @media screen and (max-width: 1200px) {
+        text-align: center;
+    }
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: baseline;
+    }
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: baseline;
+    }
+}
